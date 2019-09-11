@@ -3,5 +3,13 @@
     "activityBar.background": "#322F03",
     "titleBar.activeBackground": "#474105",
     "titleBar.activeForeground": "#FDFBE1"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules/**": true
   }
 }
