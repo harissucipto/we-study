@@ -8,3 +8,5 @@
 - File Baru (Ctrl + N)
 - Split View (Ctrl + 1+n) , misalnya mau split jadi dua (Ctrl + 2)
 - Untuk ganti view Tinggal (Ctrl + 1) attau sama dengan slit View
+- Untuk ke menu git sibar gunakan ( Ctrl + Shift + G)
+- Untuk copy satu line lalau paste satu baris kebawah gunakan (Ctrl + Shift + D)

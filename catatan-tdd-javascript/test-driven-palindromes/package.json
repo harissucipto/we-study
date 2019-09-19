@@ -8,6 +8,6 @@
     "jest": "23.6.0"
   },
   "scripts": {
-    "test": "jest --watchAll ​​--coverageReporters=text​"
+    "test": "jest"
   }
 }

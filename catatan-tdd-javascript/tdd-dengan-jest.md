@@ -58,7 +58,7 @@ describe('greeting()', () => {
 
 **Aturan**.
 
-Test suite haruslah menggunakan nama benda (noun).
+Test suite lebih bagus menggunakan nama benda (noun).
 
 It() atau test yang diinginkan deklariskan dengan kata kerja (verb).
 
@@ -95,3 +95,52 @@ pada gambar diatas menjelaskan
 
 yang artinya test belum mencakup semua 100%.
 
+### Mengingkan Hasil Test / Menegaskan (Assertion)
+
+Untuk mengingankan hasil test selalu di lakukan dengan pengawalan kata **expect(panggilFungsi(argumen)).yangDiinginkan(argumen)**
+
+nah pada kata yang diinginkan memeliki banyak fungsi yang bisa kita gunakan, yaitu:
+
+#### toBe
+
+melakukan check secara strict (ketat)  **strict equality check**  atau === , biasa digunakan untuk mengcek hasil yang diingikan harus sama dengan variable referensi, kalau tidak salah.
+
+```js
+it(ditambah(2)).toBe(4);
+```
+
+**akan salah jika
+
+```js
+
+var objectOne = {
+ propertyOne: str,
+ propertyTwo: num
+}
+
+var objectTwo = {
+ propertyOne: str,
+ propertyTwo: num
+}
+expect(objectOne).toBe(objectTwo); //returns false
+
+```
+
+### toEqual
+
+sama  dengn toBe tapi agak lossless karena melakuakn (checks for deep object equality) untuk variable refernsi boleh beda tapi nilainya tetap sama contohya 'madam' sama dengan ['madam'].
+
+```js
+
+var objectOne = {
+ propertyOne: str,
+ propertyTwo: num
+}
+
+var objectTwo = {
+ propertyOne: str,
+ propertyTwo: num
+}
+expect(objectOne).toBe(objectTwo); //returns true
+
+```
