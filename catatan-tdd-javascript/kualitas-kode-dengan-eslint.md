@@ -79,3 +79,12 @@ Untuk **menerapkan** nya kita perlu membuat dua perubahan di pengaturan eslintny
 
 Eslint akan menerapkan file .eslicrc.js atau pengaturan terdekat dalam folder confignya sehingga kita bisa membuat banyak konfig dalam banyak folder sehingga bisa melakukan perbedaan config global dengan lokal, seperti pada contoh test-driven-polindrome.
 
+### Mengatur Cara Run Eslint
+
+```js
+// .eslintrc.js
+...
+  "eslint.run": "onSave"
+...
+
+```
