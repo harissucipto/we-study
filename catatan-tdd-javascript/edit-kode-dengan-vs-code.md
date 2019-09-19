@@ -11,3 +11,4 @@
 - Untuk ke menu git sibar gunakan ( Ctrl + Shift + G)
 - Untuk copy satu line lalau paste satu baris kebawah gunakan (Ctrl + Shift + D)
 - Untuk menyimpan semua commit tekan tombol tambah, lalau untuk push commit, bisa gunakann (Ctrl + Enter)
+- Untuk checkout file atatu discard bisa gunakan git checkout --- namaFile.js

@@ -22,6 +22,8 @@ module.exports = {
 
 ```
 
+### ParserOptions
+
 Pada dasarnya eslint hanya melakuakn check javascript es5 jadi jika ingin menulis kode diversi javascript keatas seperti es6 dan seterusnya perlu melakukan **parser**.
 
 Maka kita harus menambahkan parseOptions pada pengaturannya
@@ -36,6 +38,8 @@ Maka kita harus menambahkan parseOptions pada pengaturannya
 
 ```
 
+### Env yang diapake
+
 Setelah itu masih ada lagi yang perlu kita config yaitu keyword javascript yang berasal dari fungsi pihak ke tiga seperti module  perlu kita jabarkan di eslint agar dikenali bawah itu telah didefenisikan, dengan menambahakn env.
 
 ```js
@@ -47,4 +51,31 @@ Setelah itu masih ada lagi yang perlu kita config yaitu keyword javascript yang 
 ..
 ```
 
+### Extends Pengaturan
+
+Ok Untuk mengenali keyword pihak ketiga selain dari env maka perlu di **extends** pengaturan eslintnya dengan menambahkan package penyedia extends pengaturan eslint tersebut, contohnya untuk jest.
+
+```cmd
+
+yarn add eslint-plugin-jest@22.1.2 -d
+
+```
+
+Untuk **menerapkan** nya kita perlu membuat dua perubahan di pengaturan eslintnya yaitu.
+
++ registerkan di property pengaturan **plugins** entry
++ tambahkan property peangturan **extends** di recommended configuration untuk  melakukan **extends** entry.
+
+```js
+// .eslintrc.js
+...
+  plugins: ['jest'],
+  extends: [..., 'plugin:jest/recommended']
+..
+
+```
+
+### Cara Bekerja ..eslicrc.js
+
+Eslint akan menerapkan file .eslicrc.js atau pengaturan terdekat dalam folder confignya sehingga kita bisa membuat banyak konfig dalam banyak folder sehingga bisa melakukan perbedaan config global dengan lokal, seperti pada contoh test-driven-polindrome.
 

@@ -1,4 +1,4 @@
-const polindromes = require('./palindromes');
+const polindromes = require('../palindromes');
 
 describe('polindromes()', () => {
   it('correctly indentifies one-word polindromes', () => {
