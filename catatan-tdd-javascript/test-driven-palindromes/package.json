@@ -5,6 +5,7 @@
   "author": "haris",
   "license": "MIT",
   "dependencies": {
+    "eslint": "5.10.0",
     "jest": "23.6.0"
   },
   "scripts": {
