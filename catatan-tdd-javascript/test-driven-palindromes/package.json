@@ -1,0 +1,13 @@
+{
+  "name": "test-driven-palindromes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "haris",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "23.6.0"
+  },
+  "scripts": {
+    "test": "jest --watchAll ​​--coverageReporters=text​"
+  }
+}
